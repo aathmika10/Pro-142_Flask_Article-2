@@ -1,12 +1,11 @@
 import csv
 
+all_articles=[]
 
-
-allArticles=[]
 with open("articles.csv",encoding='utf-8')as f:
-    csvreader=csv.reader(f)
-    data=list(csvreader)
-    allArticles=data[1:]
+    reader=csv.reader(f)
+    data=list(reader)
+    all_articles=data[1:]
 
-likedArticles=[]
-notLikedArticles=[]
+liked_articles=[]
+not_liked_articles=[]
